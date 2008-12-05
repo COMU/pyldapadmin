@@ -3,13 +3,14 @@
 from cgi import escape
 import ldap,server_info,template_page
 def index(req):
-    if (server_info.get_info(req)== 0):
-        server = server_info.set_info(req)
-    else:
-        server=server_info.get_info(req)
-        if server == 0:
-           return server_info.get_info(req)
     try:
+        if (server_info.get_info(req)== 0):
+            server = server_info.set_info(req)
+        else:
+            server=server_info.get_info(req)
+            if server == 0:
+                return server_info.get_info(req)
+  #  try:
         ldap_server = ldap.initialize('ldap://'+server[2])
         ldap_server.protocol_version = ldap.VERSION3
         ldap_server.bind_s(server[0],server[1])

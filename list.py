@@ -5,7 +5,7 @@ def index(req):
     server=server_info.get_info(req)
     ldap_server = ldap.initialize('ldap://'+server[2])
     ldap_server.protocol_version = ldap.VERSION3
-    page='<html><head><title>search page</title></head><body>'
+    page=template_page.page_header()+'<title>search page</title></head><body>'
     try:
         ldap_server.bind_s(server[0],server[1])
         base_dn = server[3]
@@ -18,10 +18,10 @@ def index(req):
             for key in result[1].keys():
                 page+="%s:<br/>" %(key)
                 for att_value in result[1][key]:
-                    page+='<input type="text" value="%s"> ' %(att_value)
+                    page+='<input type="text" value="%s"/> ' %(att_value)
                 page+="<br/>"
             page+="</p>"
-        page+='<a href="./show.py">back</a>'
+        page+='<p><a href="./show.py">back</a></p>'
         page+='</body></html>'
         ldap_server.unbind()
         return page

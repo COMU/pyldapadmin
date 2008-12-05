@@ -8,7 +8,7 @@ def index(req):
     server=server_info.get_info(req)
     ldap_server = ldap.initialize('ldap://'+server[2])
     ldap_server.protocol_version = ldap.VERSION3
-    page='<html><head><title>adding</title></head><body>'
+    page=template_page.page_header()+'<title>adding</title></head><body>'
     list=req.form.keys()
     record=()
     obje=[]
@@ -39,9 +39,9 @@ def index(req):
         page+='adding successfull complete.<a href="./show.py"> return</a>'
     except ldap.LDAPError, e:
         if (e.message['desc'] == 'Already exists'):
-            return page+'it\' already there'+' <br/> go main <a href="./show.py">page</a></body></html>'
+            return page+'<p><img alt="error" src="./img/error.png"/>it already there'+' </p><p> go main<a href="./show.py">page</a></p></body></html>'
         elif (e.message['info'] == 'no write access to parent'):
-            return page+'no write access to parent <br/> go main <a href="./show.py">page</a></body></html>'
+            return page+'<p><img alt="error" src="./img/error.png"/>no write access to parent</p><p> go main <a href="./show.py">page</a></p></body></html>'
         return template_page.error()
     return page+'</body></html>'
 
