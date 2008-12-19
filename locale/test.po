@@ -1,0 +1,7 @@
+domain "test"
+
+msgid "List"
+msgstr "bennn"
+
+msgid "World"
+msgstr "dünya"

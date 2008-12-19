@@ -1,0 +1,50 @@
+# translation of test.po to Turkish
+# Header entry was created by KBabel!
+#
+#: show.py:22
+# mete <metebilgin48@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Mime-Version: 1.0"
+"Last-Translator: mete <metebilgin48@gmail.com>\n"
+"PO-Revision-Date: 2008-12-17 13:06+0200\n"
+"Project-Id-Version: test\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"X-Generator: KBabel 1.11.4\n"
+"MIME-Version: 1.0\n"
+"Plural-Forms:  nplurals=1; plural=0;\n"
+
+#: show.py:22
+msgid "List"
+msgstr "Liste"
+
+#: adding.py:11
+msgid "adding"
+msgstr "Ekle"
+
+#: adding.py:39
+msgid "adding successfull complete"
+msgstr "Sorunsuz bir şekilde kayıt edildi"
+
+#: adding.py:42 adding.py:44
+msgid "go main"
+msgstr "ana"
+
+#: adding.py:42
+msgid "it already there"
+msgstr "Zaten var"
+
+#: adding.py:44
+msgid "no write access to parent"
+msgstr "Yazma hakkınız yok"
+
+#: adding.py:42 adding.py:44
+msgid "page"
+msgstr "sayfa"
+
+#: adding.py:39
+msgid "return"
+msgstr "dön"
+

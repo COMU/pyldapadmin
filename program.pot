@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-19 14:33+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: show.py:25
+msgid " delete"
+msgstr ""
+
+#: search.py:21
+msgid "Base (base dn only)"
+msgstr ""
+
+#: show.py:24
+msgid "List"
+msgstr ""
+
+#: search.py:20
+msgid "One (one level beneath base)"
+msgstr ""
+
+#: add_user.py:58
+msgid "Optional Attributes"
+msgstr ""
+
+#: add_user.py:55
+msgid "Required Attributes"
+msgstr ""
+
+#: search.py:23
+msgid "Show Attributtes"
+msgstr ""
+
+#: search.py:19
+msgid "Sub (entire subtree)"
+msgstr ""
+
+#: add_user.py:16
+msgid "add record"
+msgstr ""
+
+#: show.py:26
+msgid "add user"
+msgstr ""
+
+#: adding.py:14
+msgid "adding"
+msgstr ""
+
+#: adding.py:42
+msgid "adding successfull complete"
+msgstr ""
+
+#: add.py:14
+msgid "adding..."
+msgstr ""
+
+#: delete_user.py:29 template_page.py:10
+msgid "again"
+msgstr ""
+
+#: delete_user.py:54 search.py:58
+msgid "back"
+msgstr ""
+
+#: search.py:24
+msgid "base"
+msgstr ""
+
+#: add.py:28
+msgid "continue"
+msgstr ""
+
+#: delete_user.py:14 delete_user.py:38
+msgid "delete"
+msgstr ""
+
+#: template_page.py:10
+msgid "error page"
+msgstr ""
+
+#: search.py:25
+msgid "filter"
+msgstr ""
+
+#: adding.py:45 adding.py:47
+msgid "go main"
+msgstr ""
+
+#: adding.py:45
+msgid "it already there"
+msgstr ""
+
+#: show.py:28
+msgid "logout"
+msgstr ""
+
+#: adding.py:47
+msgid "no write access to parent"
+msgstr ""
+
+#: adding.py:45 adding.py:47
+msgid "page"
+msgstr ""
+
+#: delete_user.py:44 delete_user.py:47
+msgid "removed"
+msgstr ""
+
+#: adding.py:42
+msgid "return"
+msgstr ""
+
+#: search.py:26 show.py:27
+msgid "search"
+msgstr ""
+
+#: search.py:15
+msgid "search options"
+msgstr ""
+
+#: search.py:12
+msgid "search page"
+msgstr ""
+
+#: search.py:17
+msgid "search scope"
+msgstr ""
+
+#: search.py:35
+msgid "searching"
+msgstr ""
+
+#: add_user.py:67
+msgid "send"
+msgstr ""
+
+#: delete_user.py:26
+msgid "submit"
+msgstr ""
+
+#: delete_user.py:29 template_page.py:10
+msgid "there is some problem please"
+msgstr ""
+
+#: delete_user.py:29 template_page.py:10
+msgid "try"
+msgstr ""
+
+#: add_user.py:53
+msgid "where i put this rec rd"
+msgstr ""

@@ -1,0 +1,166 @@
+# translation of en.po to Turkish
+# Header entry was created by KBabel!
+#
+# mete <metebilgin48@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-19 13:05+0200\n"
+"PO-Revision-Date: 2008-12-17 13:20+0200\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=1; plural=0;\n"
+
+#: show.py:25
+msgid " delete"
+msgstr ""
+
+#: search.py:20
+msgid "Base (base dn only)"
+msgstr ""
+
+#: show.py:24
+msgid "List"
+msgstr "List"
+
+#: search.py:19
+msgid "One (one level beneath base)"
+msgstr ""
+
+#: add_user.py:57
+msgid "Optional Attributes"
+msgstr ""
+
+#: add_user.py:54
+msgid "Required Attributes"
+msgstr ""
+
+#: search.py:22
+msgid "Show Attributtes"
+msgstr ""
+
+#: search.py:18
+msgid "Sub (entire subtree)"
+msgstr ""
+
+#: add_user.py:15
+msgid "add record"
+msgstr ""
+
+#: show.py:26
+msgid "add user"
+msgstr ""
+
+#: adding.py:14
+msgid "adding"
+msgstr "Adding"
+
+#: adding.py:42
+msgid "adding successfull complete"
+msgstr "Adding successfull complete"
+
+#: add.py:14
+#, fuzzy
+msgid "adding..."
+msgstr "Adding"
+
+#: delete_user.py:29 template_page.py:12
+#, fuzzy
+msgid "again"
+msgstr "Go main"
+
+#: delete_user.py:54
+msgid "back"
+msgstr ""
+
+#: search.py:23
+msgid "base"
+msgstr ""
+
+#: add.py:28
+msgid "continue"
+msgstr ""
+
+#: delete_user.py:14 delete_user.py:38
+msgid "delete"
+msgstr ""
+
+#: template_page.py:12
+msgid "error page"
+msgstr ""
+
+#: search.py:24
+msgid "filter"
+msgstr ""
+
+#: adding.py:45 adding.py:47
+msgid "go main"
+msgstr "Go main"
+
+#: adding.py:45
+msgid "it already there"
+msgstr "it already there"
+
+#: show.py:28
+msgid "logout"
+msgstr ""
+
+#: adding.py:47
+msgid "no write access to parent"
+msgstr "no write access to parent"
+
+#: adding.py:45 adding.py:47
+msgid "page"
+msgstr "page"
+
+#: delete_user.py:44 delete_user.py:47
+msgid "removed"
+msgstr ""
+
+#: adding.py:42
+msgid "return"
+msgstr "return"
+
+#: search.py:25 show.py:27
+msgid "search"
+msgstr ""
+
+#: search.py:14
+msgid "search options"
+msgstr ""
+
+#: search.py:11
+msgid "search page"
+msgstr ""
+
+#: search.py:16
+msgid "search scope"
+msgstr ""
+
+#: search.py:34
+msgid "searching"
+msgstr ""
+
+#: add_user.py:66
+msgid "send"
+msgstr ""
+
+#: delete_user.py:26
+msgid "submit"
+msgstr ""
+
+#: delete_user.py:29 template_page.py:12
+msgid "there is some problem please"
+msgstr ""
+
+#: delete_user.py:29 template_page.py:12
+msgid "try"
+msgstr ""
+
+#: add_user.py:52
+msgid "where i put this rec rd"
+msgstr ""
