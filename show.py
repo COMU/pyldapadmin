@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from cgi import escape
 import ldap,server_info,template_page
+import gettext
 def index(req):
     try:
         if (server_info.get_info(req)== 0):
@@ -15,13 +16,7 @@ def index(req):
         ldap_server.protocol_version = ldap.VERSION3
         ldap_server.bind_s(server[0],server[1])
         ldap_server.unbind()
-        return """<html><body>
-       <p><a href="./list.py"><img src="./img/list.png"> list</a></p>
-       <p><a href="./delete_user.py"><img src="./img/trash.png"> delete</a></p>
-       <p><a href="./add.py"><img src="./img/user.png"> add user</a></p>
-       <p><a href="./search.py"><img src="./img/search.png"> search </a></p>
-       <p><a href="./server_info.py"><img src="./img/exit.png">logout</a></p>
-               </body></html>"""
+        return '<html><body><p><a href="./list.py"><img src="./img/list.png"> '+_('List')+'</a></p><p><a href="./delete_user.py"><img src="./img/trash.png">' _('delete')'</a></p>'+'<p><a href="./add.py"><img src="./img/user.png"> '+_('add user')+'</a></p><p><a href="./search.py"><img src="./img/search.png">'+_('search')+'</a></p><p><a href="./server_info.py"><img src="./img/exit.png">'+_('logout')+'</a></p></body></html>'
 
     except:
        return template_page.error()
