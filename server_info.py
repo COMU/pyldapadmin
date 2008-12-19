@@ -21,13 +21,15 @@ def set_info(req):
         host = escape(req.form['host_name'])
         password = escape(req.form['pas'])
         base_dn = escape(req.form['base_dn'])
-        send_marshal = Cookie.MarshalCookie('marshal', {'key1':name, 'key2':password,'key3':host,'key4':base_dn}, secret)
+        language = req.form['language']
+        send_marshal = Cookie.MarshalCookie('marshal', {'key1':name, 'key2':password,'key3':host,'key4':base_dn,'key5':language}, secret)
         send_marshal.expires = time.time() +  4 * 60 * 60
         Cookie.add_cookie(req, send_marshal)
         server_info.append(name)
         server_info.append(password)
         server_info.append(host)
         server_info.append(base_dn)
+        server_info.append(language)
         return server_info
 
 
@@ -40,10 +42,12 @@ def get_info(req):
         password = returned_marshal.value['key2']
         host = returned_marshal.value['key3']
         base_dn = returned_marshal.value['key4']
+        language = returned_marshal.value['key5']
         server_info.append(name)
         server_info.append(password)
         server_info.append(host)
         server_info.append(base_dn)
+        server_info.append(language)
         return server_info
     else:
         return 0

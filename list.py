@@ -1,8 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import ldap,template_page,server_info
+import ldap,template_page,server_info,os,gettext
+dir=os.path.dirname(os.path.abspath(__file__))+'/locale'
 def index(req):
     server=server_info.get_info(req)
+    language=gettext.translation('messages',dir, languages=[server[4]])
+    _=language.ugettext
+
+
     ldap_server = ldap.initialize('ldap://'+server[2])
     ldap_server.protocol_version = ldap.VERSION3
     page=template_page.page_header()+'<title>search page</title></head><body>'
