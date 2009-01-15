@@ -1,0 +1,51 @@
+    pyldapadmin - a ldap tool in web with python
+=============================================================
+
+FEATURES
+===============
+    * connect a ldap server with tcp with version 3
+    * search nodes in ldap server
+    * add a node
+    * remove a node
+    * list nodes
+    * internationalize (Turkish and english)
+    
+
+DEPENDENCIES
+================
+    * python 2.5 :)
+    * apache 2.2.9
+    * mod python 3.3.1
+    * python ldap 2.3.4
+    * python gettext modules - http://docs.python.org/library/gettext.html
+    * cgi ( for input text )
+    * python os modules
+    * python time modules
+
+INSTALL
+================
+    * add or replace /etc/apache2/modules.d/16_mod_python.conf like:
+
+    <IfDefine PYTHON>
+     LoadModule python_module    modules/mod_python.so
+     <IfModule mod_python.c>
+        <Directory /var/www/localhost/htdocs/python> #where you put pyldapadmin files.etc:/var/www/localhost/htdocs/python/pyldapadmi/pyldapadmin
+            PythonHandler mod_python.publisher
+            AddHandler python-program .py
+            PythonDebug On
+        </Directory>
+     </IfModule>
+     DirectoryIndex index.py
+    </IfDefine>
+
+
+TODO
+================
+    * password with cryt and md5
+    * import and export ldif
+    * sasl, tsl support
+    * choose ldap port in main page
+
+P.S.
+==============
+    * i create pyldapadmin  on pardus 2008.1 and i hope there is no bug. if you find a bug report me please.mail: metebilgin48 (at) gmail (dat) com
