@@ -39,12 +39,12 @@ def index(req):
     try:
         ldap_server.bind_s(server[0],server[1])
         ldap_server.add_s(rdn,record_obje)
-        page+=_('adding successfull complete')+'.<a href="./show.py">'+ _('return')+'</a>'
+        page+=_('adding successfull complete')+'.<a href="./login.py">'+ _('return')+'</a>'
     except ldap.LDAPError, e:
         if (e.message['desc'] == 'Already exists'):
-            return page+'<p><img alt="error" src="./img/error.png"/> '+_('it already there')+' </p><p> '+_('go main')+'<a href="./show.py">'+_('page')+'</a></p></body></html>'
+            return page+'<p><img alt="error" src="./img/error.png"/> '+_('it already there')+' </p><p> '+_('go main')+'<a href="./login.py">'+_('page')+'</a></p></body></html>'
         elif (e.message['info'] == 'no write access to parent'):
-            return page+'<p><img alt="error" src="./img/error.png"/>'+_('no write access to parent')+'</p><p>'+_('go main')+' <a href="./show.py">'+_('page')+'</a></p></body></html>'
+            return page+'<p><img alt="error" src="./img/error.png"/>'+_('no write access to parent')+'</p><p>'+_('go main')+' <a href="./login.py">'+_('page')+'</a></p></body></html>'
         return template_page.error(server[4])
     return page+'</body></html>'
 

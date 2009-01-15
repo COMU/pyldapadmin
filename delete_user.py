@@ -51,7 +51,7 @@ def remove(req):
             page+=e.message['desc']
         if (e.message['info'] == 'no write access to parent'):
             page +='<br/><img src="../img/gpg.png">'
-    page+=' <a href="../show.py">'+_('back')+'</a>'
+    page+=' <a href="../login.py">'+_('back')+'</a>'
     page+='</body></html>'
     ldap_server.unbind()
     return page

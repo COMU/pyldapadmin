@@ -55,7 +55,7 @@ def searching(req):
                     page+='<input type="text" value="%s"/> ' %(att_value)
                 page+="<br/>"
             page+="</p>"
-        page+='<p><a href="../show.py">'+_('back')+'</a></p>'
+        page+='<p><a href="../login.py">'+_('back')+'</a></p>'
         page+='</body></html>'
         ldap_server.unbind()
         return page

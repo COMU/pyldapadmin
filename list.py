@@ -26,7 +26,7 @@ def index(req):
                     page+='<input type="text" value="%s"/> ' %(att_value)
                 page+="<br/>"
             page+="</p>"
-        page+='<p><a href="./show.py">back</a></p>'
+        page+='<p><a href="./login.py">back</a></p>'
         page+='</body></html>'
         ldap_server.unbind()
         return page
