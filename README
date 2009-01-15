@@ -29,7 +29,8 @@ INSTALL
     <IfDefine PYTHON>
      LoadModule python_module    modules/mod_python.so
      <IfModule mod_python.c>
-        <Directory /var/www/localhost/htdocs/python> #where you put pyldapadmin files.etc:/var/www/localhost/htdocs/python/pyldapadmi/pyldapadmin
+        <Directory /var/www/localhost/htdocs/python> #this location is where python codes run.
+        #where you put pyldapadmin files.etc:/var/www/localhost/htdocs/python/pyldapadmin
             PythonHandler mod_python.publisher
             AddHandler python-program .py
             PythonDebug On
@@ -38,6 +39,7 @@ INSTALL
      DirectoryIndex index.py
     </IfDefine>
 
+    * copy all files to location (etc. /var/www/localhost/htdocs/python/pyldapadmin )
 
 TODO
 ================
